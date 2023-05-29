@@ -17,6 +17,7 @@ function ContactItem({ contact, deleteContact }) {
     deleteContact(contact.id);
   };
 
+  
   return (
     <ContactItems>
       <ContactName>{contact.name}</ContactName>
