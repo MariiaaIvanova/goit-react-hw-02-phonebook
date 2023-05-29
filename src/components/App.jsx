@@ -36,8 +36,6 @@ class App extends Component {
     }));
   };
 
-  // видаляє контакт
-
   deleteContact = contactId => {
     this.setState(prev => ({
       contacts: prev.contacts.filter(contact => contact.id !== contactId),
@@ -47,8 +45,6 @@ class App extends Component {
   handleFilter = e => {
     this.setState({ filter: e.currentTarget.value });
   };
-
-  // фільтрація по імені
 
   filterList = () => {
     const { filter, contacts } = this.state;
