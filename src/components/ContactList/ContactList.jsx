@@ -17,7 +17,7 @@ function ContactItem({ contact, deleteContact }) {
     deleteContact(contact.id);
   };
 
-  
+
   return (
     <ContactItems>
       <ContactName>{contact.name}</ContactName>
@@ -31,5 +31,6 @@ ContactItem.propTypes = {
   contact: PropTypes.object.isRequired,
   deleteContact: PropTypes.func.isRequired,
 };
+
 
 export default ContactList;
